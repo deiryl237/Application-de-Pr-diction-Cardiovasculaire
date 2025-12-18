@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "cardioGuard",
+    "slug": "heartCare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/illusn.png",
+    "scheme": "heartcare",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FAFAF6",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundImage": "./assets/images/adaptive-icon.png",
+        "monochromeImage": "./assets/images/adaptive-icon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dadv14.heartCare"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/illusn.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/illusn.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAFAF6",
+          "dark": {
+            "backgroundColor": "#FAFAF6"
+          }
+        }
+      ],
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true,
+          "useSQLCipher": true
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "dbe22903-6c78-4b3d-b9a7-1862c5994110"
+      }
+    }
+  }
+}
